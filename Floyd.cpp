@@ -30,7 +30,7 @@ using namespace std;
     int CreateGrafo(Grafo& G);                                                      //Criação do Grafo
     void Floyd(Grafo G, float** dist, int** pi);                                    //Algoritmo de Floyd
     void MenorCaminho(float** dist, int** pi, int i, int j) ;                       //Menor caminho
-     void MenorCaminhoR(float** dist, float *custo,int** pi, int i, int j);         //Complemento de menor caminho
+    void MenorCaminhoR(float** dist, float *custo,int** pi, int i, int j);          //Complemento de menor caminho
 
 
     void printMatriz(float** matriz, int m, int n);
@@ -55,10 +55,10 @@ using namespace std;
 
         Floyd(G,dist,pi);
 
-        cout<<"\n\n-----------------------------Matriz de distância -----------------------------"<<endl;
+        cout<<"\n\n-----------------------------Matriz de Custos -----------------------------"<<endl;
         printMatriz(dist,N,N);
 
-        cout<<"\n\nDistância entre todos os elementos interligados: " << endl;
+        cout<<"\n\nCustos entre todos os elementos interligados: " << endl;
         for(int i = 0; i < N; i++){
             cout<<"\n";        
             for(int j = 0; j < N ; j++){
@@ -147,7 +147,7 @@ using namespace std;
         float x = 0;
         float *custo = &x;
 
-        cout<< "\nMenor caminho entre [" << i << "] e [" << j << "]: " <<i << " ";
+        cout<< "\nMelhor caminho entre [" << i << "] e [" << j << "]: " <<i << " ";
         MenorCaminhoR(dist,custo,pi,i,j);
         cout<< "        Custo: " << *custo ;
     }
@@ -163,14 +163,9 @@ using namespace std;
     }
 
 
-
-
-
-
+/*Print Matriz*/
     void printMatriz(float** matriz, int m, int n){
         cout<<"\n"<<endl;
-        /*cout<<fixed;
-        cout.precision(2);*/
         for(int i = 0; i < m; i++){
             for(int j = 0; j < n; j++){
                 if(matriz[i][j] < DBL_MAX) cout<<matriz[i][j]<<"    ";
