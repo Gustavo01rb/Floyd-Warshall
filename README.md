@@ -11,23 +11,42 @@
 
 
 <h2>Inputs</h2>
+<ul>
+
+<li>
 <p>No repositório disponibilizado há um arquivo chamado <i>Entradas.txt</i> com os seguintes inputs: </p>
+<p align="center">
+    <img width="600" src="Imagens/Entradas.png">
+</p>
+</li>
 
-IMAGEM DO ARQUIVO
-
+<li>
 <p>A primeira linha representa o número de vétices total do grafo.</p>
-
-Imagem 1 linha
-
-<p>A primeira coluna indica o grau de cada vértice.</p>
-
-Imagem 1 coluna
-
-<p>As demais colunas indicam as arestas e seus respectivos pesos.</p>
-
-IMAGEM COM EXPLICAÇÃO
+<p align="center">
+    <img width="600" src="Imagens/Vertices.png">
+</p>
+</li>
 
 
+<li>
+<p>A primeira coluna indica o grau de cada vértice. Considere que cada vértice é representado pelo índice (i) da linha em que se encontra. Logo cada linha com exceção da primeira representa um vértice.</p>
+<p align="center">
+    <img width="600" src="Imagens/Grau.png">
+</p>
+</li>
+
+
+<li>
+<p>As demais colunas são lidas em pares indicam respectivamente as arestas e seus respectivos pesos.</p>
+
+<p align="center">
+    <img width="600" src="Imagens/Arestas.png">
+</p>
+</li>
+
+</ul>
+
+<br/>
 <h2>Código</h2>
 <h3>Estrutura básica dos grafos</h3>
 <p>As structs <i>Aresta, Vertice e Grafo</i> representam a estrutura básica de um grafo com Lista de Adjacência. Para estrutura de Lista foi utilizado a biblioteca <i>#include < list > .</i></p>
@@ -50,8 +69,8 @@ typedef struct Aresta{
     }Grafo;
 ~~~
 
-<h3>Funções</h3>
 <br/>
+<h3>Funções</h3>
 <h4>Criação do Grafo - CreateGrafo(Grafo& G) </h4>
 <p>Essa função tem como objetivo ler os dados do arquivo de input (Entrada.txt) e montar um grafo orientado. As informações lidas referentes as arestas de incidentes são devidamente setadas nas listas de adjacência de cada vértice.</p>
 
@@ -201,6 +220,7 @@ void Floyd(Grafo G, float** dist, int** pi){
 <p>A compilação é realizada pelo compilador g++ com a seguinte linha de comando:</p>
 
 <br/>
+
 ~~~C
 g++ Floyd.cpp -o executavel -Wall
 ~~~
