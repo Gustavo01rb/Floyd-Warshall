@@ -10,7 +10,7 @@
 <p>A melhor rota partindo de A e com destino a C não é necessariamente a que liga os vértices A e C diretamente e sim aquela que passa pelo vértice B. O caminho A->B->C tem custo: 2 e o caminho A->C tem custo: 9.</p>
 
 
-<h2>Inputs</h2>
+<h2>Inputs <a href="#entradas"><sup>[1]</sup></a></h2>
 <ul>
 
 <li>
@@ -48,7 +48,7 @@
 
 <br/>
 <h2>Código</h2>
-<h3>Estrutura básica dos grafos</h3>
+<h3>Estrutura básica dos grafos <a href="#Grafo"><sup>[2]</sup></a></h3> 
 <p>As structs <i>Aresta, Vertice e Grafo</i> representam a estrutura básica de um grafo com Lista de Adjacência. Para estrutura de Lista foi utilizado a biblioteca <i>#include < list > .</i></p>
 
 ~~~C++
@@ -70,7 +70,7 @@ typedef struct Aresta{
 ~~~
 
 <br/>
-<h3>Funções</h3>
+<h3>Funções <a href="#codigo"><sup>[3]</sup></a></h3>
 <h4>Criação do Grafo - CreateGrafo(Grafo& G) </h4>
 <p>Essa função tem como objetivo ler os dados do arquivo de input (Entrada.txt) e montar um grafo orientado. As informações lidas referentes as arestas de incidentes são devidamente setadas nas listas de adjacência de cada vértice.</p>
 
@@ -224,3 +224,9 @@ void Floyd(Grafo G, float** dist, int** pi){
 ~~~C
 g++ Floyd.cpp -o executavel -Wall
 ~~~
+
+<br/>
+<h2>Referências</h2>
+[1] <a id="entradas" href="http://www.lia.ufc.br/~rudini/ufc/2020i/cpp/entrada_floyd_adjL.txt">Arquivo de entrada</a><br/>
+[2] <a id="Grafo" href="https://www.ime.usp.br/~pf/algoritmos_para_grafos/aulas/graphdatastructs.html"> Estruturas de grafos</a><br/>
+[3] <a id="codigo" href="http://www.lia.ufc.br/~rudini/ufc/2020i/cpp/dijkstra_prim.cpp"> Código em C++ </a><br/>
