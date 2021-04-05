@@ -1,14 +1,10 @@
 <h1 align="center">Algoritmo de Floyd-Warshall</h1>
-<p align="right">
-<ul>
-    <li>Gustavo Rodrigues Barcelos</li>
-    <li>Lucas Martins Soares</li>
-    <li>Sávio Rodrigues</li>
-    <li>Wallace Ketler Melo de Morais</li>
-    <li>Yuri Dimitre Dias de Faria</li>
-
-</ul>
-</p>
+<p align="right"><b>Integrantes:</b></p>
+<p align="right">Gustavo Rodrigues Barcelos</p>
+<p align="right">Lucas Martins Soares</p>
+<p align="right">Pedro Henrique Rodrigues Pereira</p>
+<p align="right">Wallace Ketler Melo de Morais</p>
+<p align="right">Yuri Dimitre Dias de Faria</p>
 <h2>Introdução</h2>
 <br/>
 <p>Na ciência da computação, o algoritmo de Floyd-Warshall é um algoritmo que resolve o problema de calcular o caminho mais curto entre todos os pares de vértices em um grafo orientado (com direção) e valorado (com peso). O algoritmo escrito em C++ é um bom exemplo de programação dinâmica.</p>
